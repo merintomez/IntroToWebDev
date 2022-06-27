@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="restaurantStyles.css"> 
+    <style>
+
+body{
+  margin:auto;
+}
+
+h1{
+  font-size:75px;
+  font-family: 'Brush Script MT', cursive;
+  font-weight:bold;
+  text-align:center;
+  color:tomato;
+}
+
+th{
+text-align: right;
+font-weight: lighter;
+width:60%;
+font-family: 'Times New Roman', Times, serif;
+color:lightpink;
+font-style:italic;
+font-weight:bold;
+}
+
+img{
+height:28px;
+width:28px;
+float: right;  
+}
+.form{
+  padding-top: 20px;
+}
+#menu{
+  color:brown;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.bg{
+  background-color:#1f180d;
+}
+
+  </style>
+
+</head>
+
+<body>
+
+<header class="bg">
+    <p id="menu">Contact us</p>
+    <p class="circle"><img src="C:\Users\merin\OneDrive\Documents\Repos\IntroToWebDev\classwork\Restaurant_1\Image\img.jpg"><img src="C:\Users\merin\OneDrive\Documents\Repos\IntroToWebDev\classwork\Restaurant_1\Image\img.jpg"><img src="C:\Users\merin\OneDrive\Documents\Repos\IntroToWebDev\classwork\Restaurant_1\Image\image.jpg"></p>
+    <h1>Rasoi Restaurant</h1>
+    <nav class="mx-4 nav">
+
+        <a class="nav-link" href="C:\Users\merin\OneDrive\Documents\Repos\IntroToWebDev\classwork\Restaurant_2\Home.html">Home</a>&nbsp;
+        <a class="nav-link" href="C:\Users\merin\OneDrive\Documents\Repos\IntroToWebDev\classwork\Restaurant_2\Menu.html">Menu</a>&nbsp;
+        <a class="nav-link" href="C:\Users\merin\OneDrive\Documents\Repos\IntroToWebDev\classwork\Restaurant_2\Contactus.html">Contact Us</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="row g-3">
+     <div class="col-xl-12">
+
+<table>
+
+<form action="https://wp.zybooks.com/form-viewer.php" target="_blank" method="GET">
+   
+  <tr>
+     <th class="form"><label for="name">Name:</label></th><!--created a class named form for spacing-->
+     <td class="form"><input type="text" id="name" name="name"></td>
+  </tr>
+
+  <tr>
+     <th class="form"><label for="email">Email:     </label></th>
+     <td class="form"><input type="text" id="email" name="email"></td>
+  </tr> 
+ 
+  <tr>
+    <th class="form"><label for="phone">Phone:</label></th>
+    <td class="form"><input type="tel" id="phone" name="phone"></td>
+  </tr>
+
+  <tr>
+    <th class="form"><label for="inquiry">Reason for Inquiry:</label></th>
+    <td class="form"><select name="inquiry" id="inquiry">
+    <option value="catering">Catering</option>
+    <option value="privateparty">Private party</option>
+    <option value="feedback">Feedback</option>
+    <option value="other">Other</option>
+    </select></td>
+  </tr>
+
+
+  <tr>
+    <th class="form"><label for="additional">Additional Information:</label></th>
+    <td class="form"><textarea id="additional" name="additional" rows="6" cols="30"></textarea></td>
+  </tr>
+ 
+  <tr>
+     <th class="form"><label for="yesorno">Have you been to the restaurant?</label></th>
+     <td class="form"><input type="radio" name="yesorno" checked>Yes</input>
+     <input type="radio" name="yesorno">No</input></td>
+  </tr>
+  
+  <tr>
+     <th class="form">Best days to contact you:</th>
+     <td class="form"><input type="checkbox" name="m" id="m">
+     <label for="m">M</label>
+     <input type="checkbox" name="t" id="t">
+     <label for="t">T</label>
+     <input type="checkbox" name="w" id="w">
+     <label for="w">W</label>
+     <input type="checkbox" name="th" id="th">
+     <label for="th">Th</label>
+     <input type="checkbox" name="f" id="f">
+     <label for="f">F</label></td>
+  </tr>
+
+  <tr>
+    <td class="form"></td>
+     <td class="form"><button class="btn btn-success" type="submit">Send Request</button></td>
+  </tr>
+</form>
+
+</table>
+
+     </div>
+   </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+
+<footer class="bg">
+Steeles Avenue, Scarborough, M1V 1V8<br>
+ (400)500 200
+</footer>
+
+</html>
+    
