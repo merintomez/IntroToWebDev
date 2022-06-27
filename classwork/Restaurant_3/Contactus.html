@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="restaurantStyles.css"> 
+    <link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap-responsive.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+body{
+  margin:auto;
+}
+
+h1{
+  font-size:75px;
+  font-family: 'Brush Script MT', cursive;
+  font-weight:bold;
+  text-align:center;
+  color:tomato;
+}
+
+th{
+text-align: right;
+font-weight: lighter;
+width:60%;
+font-family: 'Times New Roman', Times, serif;
+color:lightpink;
+font-style:italic;
+font-weight:bold;
+}
+
+img{
+height:28px;
+width:28px;
+float: right;  
+}
+
+#menu{
+  color:brown;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.bg{
+  background-color:#1f180d;
+}
+
+
+  </style>
+
+<noscript>
+  <div class="error message">
+      We're sorry but our site <strong>requires</strong> JavaScript.
+  </div>    
+</noscript>
+
+</head>
+
+<body>
+
+<header class="bg">
+  <p style="float:right;padding-right: 10px;padding-top: 10px;"><img src="C:\Users\merin\OneDrive\Documents\Repos\IntroToWebDev\classwork\Restaurant_3\Images\image2.jpg" width="28" height="28"><img src="C:\Users\merin\OneDrive\Documents\Repos\IntroToWebDev\classwork\Restaurant_3\Images\image2.jpg" width="28" height="28"><img src="C:\Users\merin\OneDrive\Documents\Repos\IntroToWebDev\classwork\Restaurant_3\Images\image.jpg" width="28" height="28"></p>
+
+    <p id="menu">Contact us</p>
+    <h1>Rasoi Restaurant</h1>
+    <nav>
+      <div class="pill-nav mx-4">
+  
+      
+      <a class="nav-item" href="C:\Users\merin\OneDrive\Documents\Repos\IntroToWebDev\classwork\Restaurant_3\Home.html"><i class="fa fa-fw fa-home"></i></a>&nbsp;
+      <a class="nav-item" href="C:\Users\merin\OneDrive\Documents\Repos\IntroToWebDev\classwork\Restaurant_3\Menu.html">Menu</a>&nbsp;
+      <a class="nav-item active" href="C:\Users\merin\OneDrive\Documents\Repos\IntroToWebDev\classwork\Restaurant_3\Contactus.html">Contact Us</a>
+   </div>
+    </nav>
+
+</header>
+
+<div class="container">
+    <div class="row">
+     <div class="col-xl-12">
+
+<table>
+
+<form action="https://wp.zybooks.com/form-viewer.php" target="_blank" method="POST" name="myform" onSubmit="return validate()">
+   
+  <tr>
+     <th class="form"><label for="name">Name:</label></th>
+     <td><input class="form-control input-sm" type="text" id="name" name="name"></td>
+  </tr>
+
+
+  <tr>
+     <th class="form"><label for="email">Email:     </label></th>
+     <td><input class="form-control input-sm" type="text" id="email" name="email"></td>
+  </tr> 
+
+
+
+  <tr>
+    <th class="form"><label for="phone">Phone:</label></th>
+    <td><input class="form-control input-sm" type="tel" id="phone" name="phone" maxlength="10"></td>
+  </tr>
+
+  
+  <tr>
+    <th class="form"><label for="inquiry">Reason for Inquiry:</label></th>
+    <td><select class="form-control input-sm" name="inquiry" id="inquiry">
+    <option value="catering">Catering</option>
+    <option value="privateparty">Private party</option>
+    <option value="feedback">Feedback</option>
+    <option value="other">Other</option>
+    </select></td>
+  </tr>
+
+
+  <tr>
+    <th class="form"><label for="additional">Additional Information:</label></th>
+    <td><textarea class="form-control input-sm" id="additional" name="additional" rows="6" cols="30"></textarea></td>
+  </tr>
+
+ 
+     <th class="form"><label for="yesorno">Have you been to the restaurant?</label></th>
+     <td><input type="radio" name="yesorno" checked>Yes</input>
+     <input type="radio" name="yesorno">No</input></td>
+  </tr>
+  
+  <tr>
+     <th class="form">Best days to contact you:</th>
+     <td><input type="checkbox" name="days" id="days">
+     <label for="m">M</label>
+     <input type="checkbox" name="days" id="days">
+     <label for="t">T</label>
+     <input type="checkbox" name="days" id="days">
+     <label for="w">W</label>
+     <input type="checkbox" name="days" id="days">
+     <label for="th">Th</label>
+     <input type="checkbox" name="days" id="days">
+     <label for="f">F</label></td>
+  </tr>
+
+
+  <tr>
+    <td class="form"></td>
+     <td><button class="btn btn-success" type="submit">Send Request</button></td>
+  </tr>
+</form>
+
+</table>
+
+     </div>
+   </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+
+<footer class="bg container-fluid mt-4">
+Steeles Avenue, Scarborough, M1V 1V8<br>
+ (400)500 200
+</footer>
+
+</html><!--RestaurantSite created on June 2022-->
+    
